@@ -17,6 +17,8 @@ $("#shorter_url").click(function(){
         $('#actone').addClass("actonee");
         $('#acttwo').removeClass("acttwoo");
         $('#acttwo').addClass("acttwoo");
+        $('#pt').removeClass("parakkumthalika");
+        $('#pt').addClass("parakkumthalikasmall");
       },
       error: function(result) {
         alert(result.data);

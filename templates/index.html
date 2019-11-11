@@ -14,11 +14,14 @@
                 <div class="c">
                     <input id="hmm" type="text" name="website_url" placeholder="enter your loooong url here">
                     <button id="shorter_url">SHORTEN MY LONG URL</button>
-                    <div style="padding-top: 88px;font-size: 42px;color: #FEF2DD;">&lt;your short url&gt;</div>
+                        <div id="short_url" class="default"><span>your url will show up here</span></div>
+                        <button id="acttwo" type="button" style="right: 210px; width: 92px; margin-right:64px;" class="actone">STATS</button>
+                        <button onclick="copyDivToClipboard()" id="actone" type="button" class="actone">COPY</button>
                     <div style="border-bottom:3px solid #633152; width:81%; margin:auto; margin-top:25px;"></div>
                 </div>
             </div>
             <div class="footer">commit version • A project by Martin and Rohan</div>
 </body>
 <script src="../static/js/main.js"></script>
+<script src="../static/js/copy.js"></script>
 </html>

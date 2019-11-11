@@ -18,6 +18,12 @@ body {
 	padding-top: 25px;
 }
 
+.parakkumthalika{
+  position: absolute;
+  z-index: -10;
+  top:-10px;
+}
+
 button {
 	background-color: #FF4A5A;
 	height: 50px;
@@ -81,17 +87,18 @@ input:focus {
 
 .soup {
 	border: 3px solid #633152;
-	width: 650px;
+  width: 650px;
 	height: 500px;
 	margin: auto;
 	border-radius: 15px;
 	background-color: #FFFFE7;
-	position: absolute;
-	top: 0;
-	bottom: 10%;
-	left: 0;
-	right: 0;
+  margin-top: 100px;
 	-webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
 	-moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
 	box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
+}
+
+.footer{
+  text-align: center;
+  margin-top: 25px;
 }

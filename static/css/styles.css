@@ -1,0 +1,104 @@
+@font-face {
+	font-family: title;
+	src: url(../assets/TarracottaWarrior.ttf);
+}
+
+body {
+	font-family: Helvetica;
+	background-color: #FFE329;
+  overflow-y: hidden;
+}
+
+.title {
+	font-family: title;
+	color: #633152;
+	text-align: center;
+	font-weight: 600;
+	font-size: 40px;
+	padding-top: 25px;
+}
+
+.parakkumthalika{
+  position: absolute;
+  z-index: -10;
+  top:-10px;
+}
+
+button {
+	background-color: #FF4A5A;
+	height: 50px;
+	width: 81%;
+	font-size: 20px;
+	border: none;
+	color: white;
+	font-weight: 600;
+	margin-top: 25px;
+	transition: 0.2s;
+}
+
+button:hover {
+	background-color: #101316;
+}
+
+#shorter_url:active{
+  outline:none;
+}
+
+#shorter_url:focus{
+  outline:none;
+}
+
+.c {
+	text-align: center;
+	margin-top: 50px;
+}
+
+input {
+	text-align: center;
+	border: 3px dotted #633152;
+	height: 50px;
+	width: 80%;
+	font-size: 30px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	transition: background-color 5000s ease-in-out 0s;
+}
+
+input::placeholder {
+	text-align: center;
+}
+
+input[type="text"],
+textarea {
+	background: none;
+}
+
+input:focus {
+	outline: none;
+}
+
+.super {
+	margin: auto;
+}
+
+.soup {
+	border: 3px solid #633152;
+  width: 650px;
+	height: 500px;
+	margin: auto;
+	border-radius: 15px;
+	background-color: #FFFFE7;
+  margin-top: 100px;
+	-webkit-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
+	-moz-box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
+	box-shadow: 10px 10px 0px -2px rgba(0, 0, 0, 1);
+}
+
+.footer{
+  text-align: center;
+  margin-top: 25px;
+}

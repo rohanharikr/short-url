@@ -1,11 +1,3 @@
-// $(function() {
-//
-// });
-// 
-// $("#shorter_url").click(function(eve) {
-//
-// });
-
 $("#shorter_url").click(function(){
   var shortlink = {
       website_url: $("#hmm").val()

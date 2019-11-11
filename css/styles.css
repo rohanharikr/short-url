@@ -34,6 +34,14 @@ button:hover {
 	background-color: #101316;
 }
 
+#shorter_url:active{
+  outline:none;
+}
+
+#shorter_url:focus{
+  outline:none;
+}
+
 .c {
 	text-align: center;
 	margin-top: 50px;

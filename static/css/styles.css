@@ -22,6 +22,15 @@ body {
   position: absolute;
   z-index: -10;
   top:-10px;
+	transition: 5s;
+}
+
+.parakkumthalikasmall{
+	position: absolute;
+	z-index: -10;
+	top: 86px;
+	width: 310px;
+	left: 223px;
 }
 
 button {
@@ -55,7 +64,7 @@ button:hover {
 
 input {
 	text-align: center;
-	border: 3px dotted #633152;
+	border: 2px dotted #633152;
 	height: 50px;
 	width: 80%;
 	font-size: 30px;
@@ -101,4 +110,90 @@ input:focus {
 .footer{
   text-align: center;
   margin-top: 25px;
+}
+
+
+.default{
+	padding-top: 88px;
+	font-size: 23px;
+	color: #d3d3d3;
+	text-align: left;
+	padding-left: 60px;
+	display: flex;
+}
+
+.new{
+			padding-top: 88px;
+	    font-size: 23px;
+	    color: black;
+	    text-align: left;
+	    padding-left: 60px;
+}
+
+.actone,
+.acttwo {
+		display: inline-block;
+    transform: translateY(-50%);
+    border: 0;
+    outline: 0;
+    color: #FFF;
+    background: #d3d3d3;
+    font-family: 'VT323', monospace;
+    font-size: 25px;
+    text-transform: uppercase;
+    padding: 0.08em 0.8em;
+    cursor: pointer;
+		width: 83px;
+    height: 34px;
+    font-size: 20px;
+		margin-top: -8px;
+		float: right;
+		margin-right: 22px;
+ }
+
+ .actone:hover,
+ .acttwo:hover {
+     background: #d3d3d3;
+  }
+
+	actonee:hover,
+  .acttwoo:hover {
+      background: #000;
+   }
+
+ .actonee,
+ .acttwoo {
+	 display: inline-block;
+		transform: translateY(-50%);
+		border: 0;
+		outline: 0;
+		color: #FFF;
+		background: #000;
+		font-family: 'VT323', monospace;
+		font-size: 25px;
+		text-transform: uppercase;
+		padding: 0.08em 0.8em;
+		cursor: pointer;
+	 width: 83px;
+		height: 34px;
+		font-size: 20px;
+	 margin-top: -12px;
+	 float: right;
+	 margin-right: 22px;
+  }
+
+	/**
+ * Marching ants border
+ */
+
+@keyframes ants { to { background-position: 100% 100% } }
+
+#hmm {
+	border: 2px solid transparent;
+	background: linear-gradient(white, white) padding-box,
+	            repeating-linear-gradient(-45deg, black 0, black 25%, transparent 0, transparent 50%) 0 / .6em .6em;
+}
+
+#hmm:focus{
+	animation: ants 12s linear infinite;
 }

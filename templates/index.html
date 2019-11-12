@@ -7,18 +7,21 @@
     <title>short my url</title>
 </head>
 <body>
-    <img src="../static/assets/mosq.gif" class="parakkumthalika">
+    <img id="pt" src="../static/assets/mosq.gif" class="parakkumthalika">
             <div class="soup">
                 <div class="title">URL <span>Shortener</span></div>
                 <div style="width:100%; height:2px; background-color:#633152;margin-top:20px;"></div>
                 <div class="c">
                     <input id="hmm" type="text" name="website_url" placeholder="enter your loooong url here">
                     <button id="shorter_url">SHORTEN MY LONG URL</button>
-                    <div style="padding-top: 88px;font-size: 42px;color: #FEF2DD;">&lt;your short url&gt;</div>
+                        <div id="short_url" class="default"><span>your url will show up here</span></div>
+                        <button id="acttwo" type="button" style="right: 210px; width: 92px; margin-right:64px;" class="actone">STATS</button>
+                        <button onclick="copyDivToClipboard()" id="actone" type="button" class="actone">COPY</button>
                     <div style="border-bottom:3px solid #633152; width:81%; margin:auto; margin-top:25px;"></div>
                 </div>
             </div>
-            <div class="footer">commit version • A project by Martin and Rohan</div>
+            <div class="footer">commit version • A project by Martin and Rohan<span style="display:block; color:#696969; margin-top:5px;">Animation by Tony Babel.</span></div>
 </body>
 <script src="../static/js/main.js"></script>
+<script src="../static/js/copy.js"></script>
 </html>

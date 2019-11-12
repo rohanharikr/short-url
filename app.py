@@ -18,8 +18,11 @@ def viewAll(url=None):
 		response=requests.post(url=endpoint_url,json=data)
 		response=response.json()
 		if "website_url" in response:
-			return redirect("https://"+response["website_url"])
+			if "https://" in response["website_url"]:
+				return redirect(response["website_url"])
+			else:
+				return redirect("https://"+response["website_url"])
 		else:
 			return redirect("/")
 if __name__ == '__main__':
-	app.run(debug=True,port=80)
+	app.run(debug=True,port=5000)

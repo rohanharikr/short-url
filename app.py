@@ -14,7 +14,7 @@ def viewAll(url=None):
 		return render_template('index.html')
 	else:
 		endpoint_url= "https://aa9o8mq5l2.execute-api.ap-south-1.amazonaws.com/Dev/get-website"
-		data={"url":url,"ip":request.environ['REMOTE_ADDR']}
+		data={"url":url,"ip":request.headers.get('X-Forwarded-For', request.remote_addr)}
 		response=requests.post(url=endpoint_url,json=data)
 		response=response.json()
 		if "website_url" in response:

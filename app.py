@@ -14,12 +14,15 @@ def viewAll(url=None):
 		return render_template('index.html')
 	else:
 		endpoint_url= "https://aa9o8mq5l2.execute-api.ap-south-1.amazonaws.com/Dev/get-website"
-		data={"url":url}
+		data={"url":url,"ip":request.headers.get('X-Forwarded-For', request.remote_addr)}
 		response=requests.post(url=endpoint_url,json=data)
 		response=response.json()
 		if "website_url" in response:
-			return redirect("https://"+response["website_url"])
+			if "https://" in response["website_url"]:
+				return redirect(response["website_url"])
+			else:
+				return redirect("https://"+response["website_url"])
 		else:
 			return redirect("/")
 if __name__ == '__main__':
-	app.run(debug=True,port=80)
+	app.run(debug=True,port=5000)

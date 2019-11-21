@@ -174,12 +174,12 @@ input:focus {
 		text-transform: uppercase;
 		padding: 0.08em 0.8em;
 		cursor: pointer;
-	 width: 83px;
+	 	width: 83px;
 		height: 34px;
 		font-size: 20px;
-	 margin-top: -12px;
-	 float: right;
-	 margin-right: 22px;
+	 	margin-top: -12px;
+	 	float: right;
+	 	margin-right: 22px;
   }
 
 	/**
